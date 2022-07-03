@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .lx {
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            margin: 100px auto;
+            /* 动作 */
+            transition: all 1s;
+            /* 旋转中心点 
+                默认是50% 50%
+                可以是 x,y 像素px 或者是方位名词
+            */
+            transform-origin: left bottom;
+        }
+        .lx:hover {
+            /* 旋转 */
+            transform: rotate(360deg);
+        }
+        .anli {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(98, 0, 255);
+            margin: 100px auto;
+            border: 1px solid pink;
+            overflow: hidden;
+        }
+        .anli::before {
+            content: "anli";
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-color: #ccc;
+            transform: rotate(90deg);
+            transform-origin: left bottom;
+            transition: all 0.6s;
+        }
+        .anli:hover::before {
+            transform: rotate(0);
+        }
+    </style>
+</head>
+<body>
+    <div class="lx"></div>
+    <!-- 旋转中心点案例 -->
+    <div class="anli"></div>
+</body>
+</html>

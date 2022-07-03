@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+    img {
+        width: 500px;
+        transform: rotate(45deg);
+        /* 顺时针旋转45度 */
+        border-radius: 50%;
+        border:  5px solid aqua;
+    }
+    /* 三角形案例 */
+    div {
+        position: relative;
+        width: 249px;
+        height: 35px;
+        color: #000;
+    }
+    div::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 10px;
+        height: 10px;
+        border-right: 1px solid #000;
+        border-bottom: 1px solid #000;
+        transform: rotate(45deg);
+        transition: all 0.3s;
+    }
+    div:hover::after {
+        transform: rotate(225deg);
+    }
+    </style>
+</head>
+<body>
+    <!--  rotate是旋转的意思 ，单位是deg -->
+    <img src="images/img.png" alt="">
+    <!-- 倒三角案例 -->
+    <br><br><br>
+    <div></div>
+</body>
+</html> 

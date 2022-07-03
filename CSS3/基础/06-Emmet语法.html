@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one {
+            text-align: center;
+            /* tac + tab */
+            height: 10px;
+            /* h10 + tab */
+            width: 20px;
+            /* w20 + tab */
+            text-indent: 2em;
+            /* ti2e + tab */
+            line-height: 26px;
+            /* lh26px */
+            text-decoration: none;
+            /* tdn + tab */
+        }
+    </style>
+</head>
+
+<body>
+    <!--1.生成标签，直接按tab，如div 按tab-->
+    <div></div>
+    <!-- 2.生成多个标签，标签后面加*，如div*3 按tab -->
+    <div></div>
+    <div></div>
+    <div></div>
+    <!-- 3.父子级关系用>符号，比如 ul>li 按tab -->
+    <ul>
+        <li></li>
+    </ul>
+    <!-- 4.兄弟级关系用+符号，比如 div+p 按tab -->
+    <div></div>
+    <p></p>
+    <!-- 5.生成带有类名或者id名字的，直接写div.xxx 或者 p#xxx 按tab -->
+    <div class="leiming"></div>
+    <p id="aidi"></p>
+    <!-- 6.生成div类名有顺序，用$符号 -->
+    <!-- p.upup$*3 -->
+    <p class="upup1"></p>
+    <p class="upup2"></p>
+    <p class="upup3"></p>
+    <!-- 7.自带内容用{}符号 div{内容} -->
+    <div>内容</div>
+    <!-- div{$}*3 -->
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+</body>
+
+</html>

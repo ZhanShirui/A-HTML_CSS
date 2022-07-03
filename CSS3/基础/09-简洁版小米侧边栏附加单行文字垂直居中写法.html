@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简洁版小米侧边栏</title>
+    <style>
+        /*  1.把a标签转化为块元素
+            2.定义高度与宽度   
+            3.设置缩进
+            4.文字没有下划线
+            5.字体变白
+            6.字体大小14px
+            7.背景色灰色
+            8.单行文字垂直居中
+        */
+        a {
+            display: block;
+            height: 40px;
+            width: 230px;
+            text-indent: 2em;
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+            background-color: rgb(82, 87, 88);
+            line-height: 40px;  
+            /* 
+                行高等于盒子的高度，单行文字垂直居中
+                行高 = 文字高度 + 上下间隙
+                若定义的行高 < 盒子高度 则文字会靠上显示
+                若定义的行高 > 盒子高度 则文字会靠下显示
+            */
+        }
+
+        /* 鼠标经过处变为橙色255, 111, 0 */ 
+        a:hover {
+            background-color: rgb(255, 111, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#">手机 电话卡</a>
+    <a href="#">电视 盒子</a>
+    <a href="#">笔记本 平板</a>
+    <a href="#">出行 穿戴</a>
+    <a href="#">智能 路由器</a>
+    <a href="#">健康 儿童</a>
+    <a href="#">耳机 音箱</a>
+</body>
+
+</html>

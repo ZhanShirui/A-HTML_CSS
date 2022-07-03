@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS背景附着</title>
+    <style>
+        
+        body {
+            background-image: url(images/bbj.jpg);
+            background-position:center 41px ;
+            background-repeat: no-repeat;
+        /*  background-attachment 设置背景图像是否固定或者随页面的其余部分滚动 
+            background-attachment 后期可以制作视差滚动效果
+            取值有两个：默认是1.scroll 随对象内容滚动  和 2. fixed 固定
+        */
+            background-attachment: fixed;
+        }
+        p {
+            height: 120px;
+
+        }
+    </style>
+</head>
+<body>
+    <p>123</p>
+    <p>123</p>
+    <p>123</p>
+    <p>123</p>
+    <p>123</p>
+    <p>123</p>
+    <p>123</p>
+    <p>123</p>
+    <p>123</p>
+    <p>123</p>
+</body>
+</html>

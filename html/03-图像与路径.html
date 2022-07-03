@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图像标签</title>
+</head>
+<body>
+    <!-- 图像标签的属性：键值对形式
+        src / 图片路径 /必须属性
+        alt / 文本     /替换文本，图像不能显示时提示
+        title / 文本   /提示文本，鼠标放图上可以显示文本
+        width / 像素   /设置宽度
+        heig / 像素    /高度
+        border/ 像素   /边框粗细   一般用CSS来更改，不在图像标签内设定
+     -->
+    <h4>图像标签的使用：</h4>
+    <img src="mm.jpg" />
+    <h4>alt文本替换 图片显示不出时：</h4>
+    <img src="mm1.jpg" alt="猫咪出不来"/>
+    <h4>title 提示文本 鼠标放图上提示文字：</h4>
+    <img src="mm.jpg" title="猫咪"/>
+    <h4>weight 给图像设定宽度：（等比例缩放高度）</h4>
+    <img src="mm.jpg" title="猫咪" width="300"/>
+    <!-- 
+        同一级路径直接：<img src="mm.jpg" />
+        下一级路径：<img src="images/bz.png" />
+        上一级路径：<img src="../mm.jpg" />
+        
+        ps:
+        相对路径是/
+        绝对路径是\ 
+        可以用电脑内的绝对路径也可以用网络路径调用网上的资源
+     -->
+     <h4>相对路径图片：</h4>
+     <img src="images/bz1.png" alt="下一级路径" width="100">
+
+</body>
+</html>

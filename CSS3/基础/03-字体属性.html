@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字体属性</title>
+    <style>
+        h2 {
+            font-family: 微软雅黑 ;
+        }
+
+        body {
+            font-size: 16px;    /*字体大小默认为16px 单位是px像素*/
+        }
+
+        .p1 {
+            font-family: 'Microsoft Yahei', Arial, Helvetica, sans-serif ;
+            font-size: 10px;
+        }
+
+        .p2 {
+            font-family: '宋体', Arial, Helvetica, sans-serif ;
+            font-size: 20px;
+        }
+
+        .bold {
+            /* 
+            实际开发中更加提倡使用数字来表明字体粗细，
+            bold=700  normal=400 数字表示不加单位
+            */
+             font-weight: bold;   /*bold为字体加粗 */
+        }
+
+        .p3 {
+             font-style: italic;  /* 倾斜字体 */
+             font-style: normal;  /* 正常字体 */
+        }
+
+        /* 
+            复合属性：简写方式 节约代码  注意：不用的可以不写，但font-size font-family必须存在！
+            font: font-style font-weight font-size fong-size/line-height font-family
+            font: italic 700 16px 'Microsoft Yahei';
+            ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+        */
+        div {
+            font-style: italic;
+            font-weight: 700;
+            font-size: 16px;
+            font-family: 'Microsoft Yahei';
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h2>改变字体样式</h2>
+    <p class="p1">改变字体样式aaaaaaaaaa</p>
+    <p class="p2">改变字体样式bbbbbbbbbbbb</p>
+    <p>ccccccccccccccccccccccc</p>
+    <p>ddddddddddddddddddddddd</p>
+    <p class="bold">eeeeeeeeeeeeeeeeeeeeeee</p>
+    <p>fffffffffffffffffffffff</p>
+    <div>案例测试！！！</div>
+</body>
+</html>

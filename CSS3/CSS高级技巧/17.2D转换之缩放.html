@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 不影响其他的盒子内容 */
+        div {
+            height: 200px;
+            width: 200px;
+            background-color: skyblue;
+            transition: all 0.3s;
+            /* 变换的中心点 */
+            transform-origin: 50% 50%;
+        }
+        div:hover {
+            transform: scale(-1 ,-1);
+            transition: all 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <div>开心</div>
+</body>
+</html>

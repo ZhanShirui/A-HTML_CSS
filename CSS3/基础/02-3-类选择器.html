@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03-类选择器</title>
+    <style>
+            /* 
+                类选择器可以选择不同的标签，单独一个或某几个标签。
+                样式点定义，结构类调用 最常用**
+                格式如下：
+                .类名 {
+                    属性1: 属性值1;
+                    ......
+                }
+            */
+            .red {
+                color: red;
+            }
+            .blue {
+                color: blue;
+            }
+
+
+            /* 测试案例的CSS */
+
+            .boxsize {
+                width: 50px;
+                height: 50px;
+            }
+            .redbox {
+                background-color: red;
+            }
+            .bluebox {
+                background-color: blue;
+            }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="red">aaaaaa</li>
+        <li>bbbbb</li>
+        <li class="red">ccccccc</li>
+        <li>ddddd</li>
+        <li class="blue">eeeeee</li>
+    </ul>
+    <div class="blue">文字</div>
+
+    <!-- 多类名使用之间要加空格 -->
+    <h4>案例测试</h4>
+    <div class="redbox boxsize">红色</div>
+    <div class="bluebox boxsize">蓝色</div>
+    <div class="redbox boxsize">红色</div>
+</body>
+</html>

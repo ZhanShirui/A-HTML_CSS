@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>超链接标签</title>
+</head>
+<body>
+    <!-- 
+        <a href="跳转目标" target="目标窗口的弹出方式"> 文本或图像 </a>
+        href 用于指定链接目标的url地址，是必须属性*
+        target 用于指定链接页面的打开方式，_self为默认值，_blank为在新窗口打开
+    -->
+    <h4>外部链接例子</h4>
+    <a href="http://www.baidu.com" target="_self">百度</a>
+    <a href="http://www.baidu.com" target="_blank">new百度</a>
+
+    <h4>内部链接</h4>
+    <a href="index1.html" target="_blank">内部链接跳转</a>
+    <!-- 若地址还未考虑好，可以使用#来代替，先设置为空地址 -->
+    <a href="#" >空地址</a>
+
+    <!--   
+        <h4>下载链接例子</h4>
+        <a href="地址是一个文件或者压缩包，就会下载">下载链接</a>
+     -->
+    <h4>网页元素的链接</h4>
+    <a href="http://www.baidu.com" target="_blank"><img src="mm.jpg" width="100"></a>
+    
+    <!-- 快速定位页面中的某个位置 -->
+    <h4>锚点链接例子</h4>
+    <a href="#start1" >锚点起始</a>
+    <p> xxxxxxxxxxxxxxxxx<br />xxxxxxxxxxxxxxxxx<br />
+        xxxxxxxxxxxxxxxxx<br />xxxxxxxxxxxxxxxxx<br />
+        xxxxxxxxxxxxxxxxx<br />xxxxxxxxxxxxxxxxx<br />
+        xxxxxxxxxxxxxxxxx<br />xxxxxxxxxxxxxxxxx<br />
+        xxxxxxxxxxxxxxxxx<br />xxxxxxxxxxxxxxxxx<br />
+        xxxxxxxxxxxxxxxxx<br />xxxxxxxxxxxxxxxxx<br />
+        xxxxxxxxxxxxxxxxx<br />xxxxxxxxxxxxxxxxx<br />
+        xxxxxxxxxxxxxxxxx<br />xxxxxxxxxxxxxxxxx<br />
+        xxxxxxxxxxxxxxxxx<br />xxxxxxxxxxxxxxxxx<br />
+        xxxxxxxxxxxxxxxxx<br />xxxxxxxxxxxxxxxxx<br />
+    </p>
+    <h3 id="start1">锚点终点</h3>
+</body>
+</html>

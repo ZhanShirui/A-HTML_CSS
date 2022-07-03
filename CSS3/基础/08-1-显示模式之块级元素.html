@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>显示模式之块级元素</title>
+    <style>
+        /*  块元素有 <h1>-<h6>  <p> <div> <ul> <ol> <li> 
+            块级元素独占一行
+            高度宽度外边距离都可以控制
+            宽度默认是容器(父级宽度)的100%
+            块级元素是一个盒子,里面可以嵌套块级或者行内元素 
+        */
+        /* 文字类的元素不能使用块元素
+            <p>标签内主要存放文字,不能存放块级元素!特别是div
+            同理:h1-h6之间也不能存放块级元素 
+        */
+        div {
+            width: 500px;
+            height: 100px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div>块级元素独占一行</div>在块之外就只能另起一行
+</body>
+</html>

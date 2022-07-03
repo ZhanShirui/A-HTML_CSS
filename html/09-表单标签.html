@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单标签</title>
+</head>
+<body>
+    <h4>表单域</h4>
+    <!-- 表单便于收集用户信息 
+        表单包含1.表单域 2.表单控件 3.提示信息
+
+        <form action="url地址" method="提交方式" name="表单域名称">
+            各种表单元素控件
+        </form>
+ 
+        *******************************************************************
+        属性    属性值     作用
+        action  url地址    用于指定接收并处理表单数据的服务器程序的url地址
+        method  get/post   用于设置表单数据的提交方式，取值为get或者post
+        name    名称        用于指定表单的名称，以区分同一个页面中的多个表单域
+    -->
+    <form action="workoput.php" method="post" name="name1">
+
+    </form>
+
+    <h4>表单元素（控件）</h4>
+    <!-- input表单元素 
+        <input type="属性值" /> 单标签
+        其中：属性值      描述
+              button     定义可点击按钮（多数情况下，用于通过JavaScript启动脚本）
+              checkbox   定义复选框
+              file       定义输入字段和“浏览”按钮，提供上传
+              hidden     定义隐藏的输入字段
+              image      定义图像形式的提交按钮
+              password   定义密码字段，该字段中的字符被掩码
+              radio      定义单选按钮
+              reset      定义重置按钮，重置按钮会清除表单中的所有数据
+              submit     定义提交按钮，提交按钮会把表单数据发送到服务器
+              text       定义单行的输入字段，用户可在其中输入文本，默认宽度为20个字符
+
+        除了type还有name（该表单元素的名字），value（默认值），checked（默认勾选），maxlength（定义最大长度）
+    -->
+    <form action="xxx.php" method="get">
+        用户名：<input type="text" name="username" value="请输入用户名" /> <br />
+        密码：<input type="password" name="pwd" maxlength="16"/> <br />
+        <!-- 性别实现多选一，定义成同一个name -->
+        性别：<input type="radio" name="sex" value="男" /> 男 <input type="radio" name="sex" value="女" /> 女 <br />
+        兴趣爱好：<input type="checkbox" name="hobby" value="吃饭" />吃饭 <input type="checkbox" name="hobby" value="睡觉" />睡觉 <input type="checkbox" name="hobby" value="看电影" />看电影 <br />
+        <input type="submit" value="免费注册"/>
+        <input type="reset" value="重新填写" />
+        <!-- button搭配JavaScript脚本语言 -->
+        <input type="button" value="获取短信验证码" /> <br/>
+        上传头像： <input type="file" />
+    </form>
+</body>
+</html>

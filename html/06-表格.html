@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格</title>
+</head>
+<body>
+    <!-- 
+        <table></table>用于定义表格 双标签
+        <tr></tr>定义表格中的行，在<table>标签中
+        <td></td>定义表格中的单元格，在<tr>标签中
+        <th></th>表头部分，加粗、居中显示，在<tr>标签中
+
+            表格属性（样式）基本用CSS来设置
+                        **写在<table></table>之中**
+            属性名           属性值             描述
+            align           left center right  对齐方式
+            border          1或者" "            单元格边框，默认为""
+            cellpadding     像素值              规定单元边沿与其内容之间的空白，默认1像素
+            cellspacing     像素值              规定单元表格之间的空白，默认2像素
+            width           像素值或百分比       规定表格宽度
+        -->
+
+    <table align="center" border="1" cellpadding="10" cellspacing="0" width="500">
+        <tr> <th>姓名</th> <th>性别</th> <th>年龄</th> </tr>
+        <tr> <td>楼宝</td>  <td>男</td>   <td>20</td>  </tr>
+        <tr> <td>冰宝</td>  <td>女</td>   <td>20</td>  </tr>
+    </table>
+
+</body>
+</html>

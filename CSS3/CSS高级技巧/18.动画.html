@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 定义动画，名字为move1 */
+        @keyframes move1 {
+            /* 开始状态 */
+            0% {
+                transform: translate(0px ,0px);
+            }
+            25% {
+                transform: translate(1000px ,0px) ;
+            }
+            50% {
+                transform: translate(1000px ,500px) ;
+            }
+            75% {
+                transform: translate(0px ,500px) ;
+            }
+            /* 结束状态 */
+            100% {
+                transform: translate(0px ,0px) ;
+            }
+        }
+        /* form to 可以代替0%和100% */
+
+
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            /* 调用动画move1 */
+            animation-name: move1;
+
+            /* 持续时间 */
+            animation-duration: 2s;
+
+            /* 运动曲线,默认是ease */
+            animation-timing-function: ease;
+
+            /* 动画何时开始，延时启动 */
+            animation-delay: 1s;
+
+            /* 动画的播放次数，默认是1 ,infinite是无限循环*/
+            animation-iteration-count: infinite;
+
+            /* 是否反向播放，默认是normal 反方向是alternate */
+            animation-direction: alternate;
+            
+            /*  动画结束后的状态，默认是backwards，可以设置为forwards 
+                前提是取消动画播放次数还有反方向播放！！                    */
+            animation-fill-mode: forwards;  
+            
+            /*  规定动画是否运行或者暂停，默认是running，可设置为paused
+                一般情况下用:hover来使用
+            */
+            animation-play-state: paused; 
+            
+            /* 动画的简写：动画名称 持续时间 运动曲线 何时开始 播放次数 是否反向 起始或结束状态 */
+            animation: move1 2s linear .5s 1 alternate forwards;
+
+            /* 可以用steps() 来分几步骤去完成定格动画 注意！此时不能用*/
+        }
+       
+    </style>
+</head>
+<body>
+    <!-- 相比起过度，动画可以实现更多变化，更多控制，连续自动播放等效果 -->
+    <div></div>
+</body>
+</html>

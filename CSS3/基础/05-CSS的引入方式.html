@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS的引入方式</title>
+    <style>
+        /* 
+            CSS样式表可分为三大类：
+            1.行内样式表（行内式）
+            在元素标签内部的style属性中定义CSS样式，用于简单的修改
+            *缺点：没有结构与样式分离，书写繁琐
+
+            2.内部样式表（嵌入式）
+            将<style>写在<html>中的head标签中
+            便于控制当前整个页面中的元素样式设置，被称为嵌入式引入，练习中常用
+
+            3.外部样式表（链接式）
+            在外部单独建立CSS文件，再把CSS文件引入到HTML文件中
+        */
+
+        /* 2.内部样式表（嵌入式）书写格式如下
+        ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓  */
+        div {
+            color: brown;
+        }
+
+    </style>
+    <link rel="stylesheet" href="05-outside.css">
+</head>
+<body>
+    <p style="color: blue; font-size: 12px;">1.行内样式表（行内式）</p>
+    <div>2.内部样式表（嵌入式）</div>
+    <div class="outside1">3.外部样式表（链接式）</div>
+    <img src="images/CSS引入方式总结.png">
+</body>
+</html>
